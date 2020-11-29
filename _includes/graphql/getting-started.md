@@ -68,6 +68,7 @@ const parseGraphQLServer = new ParseGraphQLServer(
 );
 
 // (Optional) Mounts the REST API
+// (Required) For email verification.  See below.
 app.use('/parse', parseServer.app);
 // Mounts the GraphQL API using graphQLPath: '/graphql'
 parseGraphQLServer.applyGraphQL(app);
